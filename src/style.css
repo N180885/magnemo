@@ -9,7 +9,7 @@ body{
     font-family: 'Segoe UI';    
 }
 nav{
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
 span{
     color:#5db137;
@@ -28,8 +28,8 @@ main{
 }
 .main-left .C{
     letter-spacing: 10px;
-    margin-bottom: 40px;
-    margin-top: 30px;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 .main-left li{
     list-style: none;
@@ -37,8 +37,8 @@ main{
     margin-bottom: 10px;
 }
 .main-left input{
-    height: 30px;    
-    width: 500px;
+    height: 1.875rem;    
+    width: 31.25rem;
     border: none;
     /* border-bottom: 1px solid black; */
     /* border-left: 1px solid black; */
@@ -49,18 +49,18 @@ main{
 
 .foto{
     border: 1px solid black;
-    height: 220px;
-    width: 180px;
+    height: 13.75rem;
+    width: 11.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;    
-    font-size:12px;
+    font-size: 0.75rem;
     background: rgb(238, 238, 238);
     text-align: center;
 }
 .rem,.family{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
 }
 .boxes{
     display: flex;
@@ -74,12 +74,12 @@ main{
     font-style: italic;
     margin-bottom: 10px;
     font-weight: 600;
-    font-size: 15px;    
+    font-size: 0.93rem;    
 }
 
 .box-right input{
-    width: 1000px;
-    height: 30px;   
+    width: 62.5rem;
+    height: 1.875rem;   
     padding: 4px; 
     /* margin-bottom: 10px; */
     border: none;
@@ -90,8 +90,8 @@ main{
     outline: none;
 }
 .box-right>select{
-    width: 1000px;
-    height: 30px;   
+    width: 62.5rem;
+    height: 1.875rem;   
     padding: 4px; 
     margin-bottom: 10px;
     border: none;
@@ -103,7 +103,7 @@ main{
 }
 
 .box-right textarea{
-    width: 1000px;
+    width: 62.5rem;
     padding: 4px;
     margin-bottom: 10px;
     border: none;
@@ -130,52 +130,52 @@ main{
 .lang{
     display: flex;
     justify-content: space-between;
-    width: 250px;
+    width: 15.62rem;
     margin-bottom: 10px;
 }
 .lang select{
-    height: 30px;
-    width: 35px;
+    height: 1.875rem;
+    width: 2.18rem;
 
 }
 .lang .tilni-tanla {
-    height: 30px;
-    width: 150px; 
-    font-size: 16px;  
+    height: 1.875rem;
+    width: 9.37rem; 
+    font-size: 1rem;  
     border:none;
     border-bottom: 1px dashed #ccc; 
 }
 .lang .tilni-tanla option{
-    height: 30px;
-    width: 150px;    
-    font-size: 16px;
+    height: 1.875rem;
+    width: 9.37rem;    
+    font-size: 1rem;
 }
 
 .box-right button{
-    height: 30px;
-    width: 35px;
+    height: 1.875rem;
+    width: 2.18rem;
 }
 .lang input{
-    width: 150px;
-    font-size: 16px;
+    width: 9.37rem;
+    font-size: 1rem;
 }
 .jadval,.input{
     display: flex;
 }
 .jadval p{
-    height: 80px;
-    width: 200px;
+    height: 5rem;
+    width: 12.5rem;
     border:1px solid black;
     font-weight: 700;
     text-align: center;
 }
 .input input{
-    height: 80px;
-    width: 200px;
+    height: 5rem;
+    width: 12.5rem;
     border:1px solid black;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 .adres,.mail,.number,.date{
     font-weight: 700;
@@ -189,8 +189,8 @@ main{
     font-style: italic;
 }
 .adres input,.mail input,.number input,.date input{
-    width: 500px;
-    height: 30px;   
+    width: 31.25rem;
+    height: 1.875rem;   
     padding: 4px; 
     margin-bottom: 10px;
     border: none;
@@ -206,17 +206,34 @@ main{
     
 }
 .raqam b, .raqam select{
-    height: 32px;
-    width: 45px;
+    height: 2rem;
+    width: 2.81rem;
     border: 1px solid #ccc;
     display: flex;
     align-items: center;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .raqam input{
     margin-bottom: 0;
-    width: 440px;
-    font-size: 16px;
+    width: 27.5rem;
+    font-size: 1rem;
     list-style: none;
+}
+
+
+
+
+
+@media screen and (max-width: 425px){
+    body{
+        max-width: 400px;
+    }
+
+    nav{
+        margin-left: 30px;
+    }
+    main{
+        margin-left: 30px;
+    }
 }
