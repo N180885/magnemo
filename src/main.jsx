@@ -231,7 +231,7 @@ class Main extends Component {
               <div className="box-left">
                 <p>ИНН рақамингиз</p>
               </div>
-              <div className="box-right inn"><input type="text"/></div>
+              <div className="box-right inn"><input className="inn" type="text"/></div>
             </div>            
           </div>
 
