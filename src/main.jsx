@@ -287,6 +287,7 @@ class Main extends Component {
                                              (<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>Tekshiring</b>)}              
               
               </div>
+              
           </div>
           <div className="date">
               <p>Tўлдирилган вақти</p>
