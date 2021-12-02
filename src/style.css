@@ -236,9 +236,7 @@ main{
     main{
         margin-left: 30px;
     }
-    .box-right .inn{
-        width: 59rem;        
-    }
+    
     .adres input,.mail input,.number input,.date input{
         width: 31.25rem;
         height: 1.875rem;   
