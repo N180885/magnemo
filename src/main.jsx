@@ -283,8 +283,8 @@ class Main extends Component {
                 if(this.state.raqam.length===7){(<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>"Тугри"</b>)}
               else{(<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}></b>)}}; */}
 
-              { this.state.raqam.length!==7? (<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>Tekshiring</b>):
-                                             (<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}></b>)}              
+              { this.state.raqam.length===7? (<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}></b>):
+                                             (<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>Tekshiring</b>)}              
               
               </div>
           </div>
