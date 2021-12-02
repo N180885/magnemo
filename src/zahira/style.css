@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "LabGrotesque";
+ 
+}
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden; 
+}
+
+
+/* body{
+    background: #f8f8f8;
+    max-width: 1440px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width:100%;
+    background-color:#f8f8f8;
+    justify-content: end;
+}
+nav a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color:#000;
+    margin: 10px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap:30px;
+    padding: 20px;
+}
+.center{
+    padding: 10px;
+    background: #f9f9f9;;
+
+}
+.div{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.bir, .ikki, .uch{
+    background:#ccc;
+    width: 100%;
+    height: auto;
+    text-align: center;   
+    padding: 10px;
+
+}
+.bir img, .ikki img, .uch img{
+    height: 180px;
+    width: auto;
+}
+aside .div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    background: #ccc;
+}
+aside .links{
+    display: flex;
+    align-items: center;
+
+} */
+
+nav h1 { 
+  margin-left: 0.8rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.20rem;
+}
+a {
+  text-decoration: none;
+  color: #9b826b;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0.30rem; 
+}
+nav {
+  width: 100%;
+  height: 5vh;
+  background: hsla(120, 58%, 92%, 0.678);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(255, 0, 0);
+  transition: 1s;
+}
+nav:hover {
+  background: #e46a5f;
+  transition: 1.2s;
+  color: white;
+}
+nav a:hover {
+  color: white;
+}
+
+input {
+  width: 12.5rem;
+  padding: 0.3rem;
+  border: 1.5px solid gold;
+  border-radius: 0.3rem;
+  margin-bottom: 0.12rem;
+}
+textarea {
+  width: 12.5rem;
+  padding: 0.6rem;
+  border: 1.5px solid gold;
+  border-radius: 0.3rem;
+  margin-bottom: 0.12rem;
+}
+select {
+  width: 12.5rem;
+  border: 1.5px solid gold;
+  border-radius: 0.3rem;
+  margin-bottom: 0.12rem;
+}
+button {
+  background: rgb(250, 197, 97);
+  width:  12.5rem;
+  border: 1.5px solid gold;
+  border-radius: 0.3rem;
+}
+main {  
+  width: 100%;
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr; 
+ 
+}
+aside{
+  width: 100%;
+  min-height: 75vh;
+}
+.center{
+  width: 100%;
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  align-content: flex-start;
+  
+}
+.foot {
+  width: 100%;
+  height: 20vh;
+  background:#00ac4841;
+  position: relative;
+ 
+}
+
+.on {
+  background: none;
+  color: black;
+}
+.on .line:nth-of-type(2) {
+  background: rgb(2, 2, 2);
+  transform: translateX(-20px);
+  transition: 0.5s;
+  background:white;
+}
+.on .line:nth-of-type(1) {
+  background: rgb(2, 2, 2);
+  transform: translateY(4px) rotate(45deg);
+  transition: 0.5s;
+}
+.on .line:nth-of-type(3) {
+  background: rgb(2, 2, 2);
+  transform: translateY(-4px) rotate(-45deg);
+  transition: 0.5s;
+}
+.off {
+  background: none;
+  color: black;
+  transition: 0.5s;
+}
+.off .line.line:nth-of-type(2) {
+  transform: translateX(0px);
+  transition: 0.5s;
+}
+.off .line:nth-of-type(1) {
+  transform: translateY(0px) rotate(0deg);
+  transition: 0.5s;
+}
+.off .line:nth-of-type(3) {
+  transform: translateY(0px) rotate(0deg);
+  transition: 0.5s;
+}
+.line {
+  height: 0.125rem;
+  width: 1rem;
+  margin: 1px;
+  background: rgb(118, 82, 248);
+}
+.show {
+  width: 100%;
+  height: auto;
+  padding: 0.625rem;
+  transform: translateX(0px);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.hide { 
+  width: 100%;
+  height: auto;
+  padding: 0.625rem;
+  transform: translateX(-150px);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  color:rgba(8, 8, 8, 0);
+}
+.home, .map {  
+  background-color: #ffbb001f;  
+  border-radius: 0.31rem;
+  box-shadow: 1px 1px 0.5px #ffba00;
+  padding: 0.31rem;
+  height: 150px; 
+  
+}
+.home h3, .map h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0.31rem;
+  margin-bottom: 2.5rem;
+  color: #000;
+}
+.home a, .map a {
+  margin: 0px;
+}
+.home p, .map p {
+  text-align: left;
+  font-size: 0.5rem;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  border: 1px solid #ccc;  
+  background-color: #ffbb001f;  
+  border-radius: 0.31rem;
+  box-shadow: 1px 1px 0.5px #ffba00;
+  width: 100%;
+  padding: 0.31rem;
+  height: 15rem;
+}
+.detail button,
+.post button {
+  cursor: pointer;
+}
+.detail h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.625rem;
+}
+.detail p {
+  text-align: left;
+  margin-bottom: 0.625rem;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #fdc15200;
+  width: 100%; 
+  padding: 0.625rem;
+}
+span {
+  font-style: italic;
+  font-size: 1.56rem;
+  color: #ffba00;
+  margin-right: 0.25rem;
+  font-weight: 900;
+  font-family: serif;
+}
+.link {
+  display: flex;
+  align-items: center;
+}
+.link img {
+  opacity: 1;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 0.625rem;
+  margin-top: 0.125rem;
+}
+.link .t img {
+  opacity: 1;
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-right: 0px;
+}
+.aside{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-bottom: 2px solid #000;
+  
+  
+}
+.aside .btn button{  
+  height: 30px;
+  width: 30px;
+  margin: 1px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+.havo{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 30px;
+}
+.havo button{
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.havo p{
+  height: 30px;
+  width: 30px; 
+  font-size: 20px;
+  display: flex;  
+  align-items: center;
+  margin-left: 10px;
+  font-weight: 900;
+  
+}
+.havo>input{
+  height: 30px;
+  width: 80px;
+  font-size: 16px;
+  border:none;
+  border-bottom: 1px dotted #000;
+  /* border-left: 1px solid #000; */
+  border-radius: 0;
+}
+.havo .img img{
+  height: 50px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+ 
+
+}
