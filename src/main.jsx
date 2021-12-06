@@ -80,28 +80,28 @@ class Main extends Component {
               <div className="box-right">
                 
                 <select>
-                  <option value="" selected >O'zbek</option>
-                  <option value="Qirg'iz">Qirg'iz</option>
-                  <option value="Qozoq">Qozoq</option>
-                  <option value="Tojik">Tojik</option>
-                  <option value="Rus">Rus</option>
-                  <option value="Koreys">Koreys</option>
-                  <option value="Uyg'ur">Uyg'ur</option>
-                  <option value="Turkman">Turkman</option>
-                  <option value="Hindi">Hindi</option>
-                  <option value="Tatar">Tatar</option>
-                  <option value="Nemis">Nemis</option>
-                  <option value="Turk">Turk</option>
-                  <option value="Fransuz">Fransuz</option>
-                  <option value="Yapon">Yapon</option>
-                  <option value="Chechen">Chechen</option>
-                  <option value="Moldovan">Moldovan</option>
-                  <option value="Armyan">Armyan</option>
-                  <option value="Hitoy">Hitoy</option>
-                  <option value="Qoraqalpoq">Qoraqalpoq</option>
-                  <option value="Ukrain">Ukrain</option>
-                  <option value="Ozarbayjan">Ozarbayjan</option>
-                  <option value="Belarus">Belarus</option>
+                  <option value="" selected >Узбек</option>
+                  <option value="Qirg'iz">Киргиз</option>
+                  <option value="Qozoq">Козок</option>
+                  <option value="Tojik">Тожик</option>
+                  <option value="Rus">Рус</option>
+                  <option value="Koreys">Корейс</option>
+                  <option value="Uyg'ur">Уйгур</option>
+                  <option value="Turkman">Туркман</option>
+                  <option value="Hindi">Хинд</option>
+                  <option value="Tatar">Татар</option>
+                  <option value="Nemis">Немис</option>
+                  <option value="Turk">Турк</option>
+                  <option value="Fransuz">Француз</option>
+                  <option value="Yapon">Япон</option>
+                  <option value="Chechen">Чечен</option>
+                  <option value="Moldovan">Молдован</option>
+                  <option value="Armyan">Армян</option>
+                  <option value="Hitoy">Хитой</option>
+                  <option value="Qoraqalpoq">Коракалпок</option>
+                  <option value="Ukrain">Украин</option>
+                  <option value="Ozarbayjan">Озарбайжон</option>
+                  <option value="Belarus">Беларус</option>
                 </select>
                 </div>
             </div>
@@ -204,7 +204,7 @@ class Main extends Component {
                   {this.state.mode===""? null: (
                     <>
                     <div className="lang">
-                    <input onChange={(e)=>this.setState({til1:e.target.value})} type="text" placeholder="Tilni kiriting" value={this.state.til1}/>
+                    <input onChange={(e)=>this.setState({til1:e.target.value})} type="text" placeholder="Тилни киритинг" value={this.state.til1}/>
                     <select>
                           <option value="" selected >1</option>
                           <option>2</option>
