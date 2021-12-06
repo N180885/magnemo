@@ -47,6 +47,9 @@ main{
     box-shadow: 1px 1px 1px;
     outline: none;
 }
+select{
+    background-color:rgb(255, 253, 253);
+}
 
 .foto{
     border: 1px solid black;
@@ -127,7 +130,7 @@ main{
 .lang{
     display: flex;
     justify-content: space-between;
-    width: 15.62rem;
+    width: 17.62rem;
     margin-bottom: 10px;
 }
 .lang select{
@@ -137,14 +140,15 @@ main{
 }
 .lang .tilni-tanla {
     height: 1.875rem;
-    width: 9.37rem; 
+    width: 9rem; 
     font-size: 1rem;  
     border:none;
     border-bottom: 1px dashed #ccc; 
 }
+
 .lang .tilni-tanla option{
     height: 1.875rem;
-    width: 9.37rem;    
+    width: 11rem;    
     font-size: 1rem;
 }
 
@@ -153,7 +157,7 @@ main{
     width: 2.18rem;
 }
 .lang input{
-    width: 9.37rem;
+    width: 9rem;
     font-size: 1rem;
 }
 .jadval,.input{
@@ -220,9 +224,7 @@ main{
     list-style: none;
 }
 @media screen and (max-width: 425px){
-    body{
-        /* max-width: 400px; */
-    }
+   
     nav{
         margin: 30px;
     }

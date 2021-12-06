@@ -4,14 +4,14 @@ class Main extends Component {
   state = {
     til: "",
     til1: "",
-    mode: 0,
+    mode: "",
     raqam:"",
     inn:""
   };
 
   click=()=>{
-    this.setState({mode:+1});
-    console.log(this.state.mode)
+    this.setState({mode:this.state.mode+1});
+    
 
   }
 
@@ -176,7 +176,7 @@ class Main extends Component {
                   </div>
                   <div className="lang">
                   <select className="tilni-tanla" >
-                          <option value="Tilni tanlang" selected disabled>Tilni tanlang</option>
+                          <option value="Tilni tanlang" selected disabled>Тилни танланг</option>
                           <option>Немис тили</option>
                           <option>Турк тили</option>
                           <option>Араб тили</option>
@@ -201,7 +201,7 @@ class Main extends Component {
                       </select> 
                   </div>
                
-                  {this.state.mode===0? null: (
+                  {this.state.mode===""? null: (
                     <>
                     <div className="lang">
                     <input onChange={(e)=>this.setState({til1:e.target.value})} type="text" placeholder="Tilni kiriting" value={this.state.til1}/>
