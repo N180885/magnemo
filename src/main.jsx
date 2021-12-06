@@ -5,7 +5,8 @@ class Main extends Component {
     til: "",
     til1: "",
     mode: 0,
-    raqam:""
+    raqam:"",
+    inn:""
   };
 
   click=()=>{
@@ -231,7 +232,11 @@ class Main extends Component {
               <div className="box-left">
                 <p>ИНН рақамингиз</p>
               </div>
-              <div className="box-right inn"><input className="inn" type="text"/></div>
+              <div className="box-right">
+                <input onChange={(e)=>this.setState({inn:e.target.value})} type="number" className="inn" placeholder="ИНН ракамингизни киритинг"/>
+                { this.state.inn.length===14? (<b style={{color:"green", width:"200px", border: "none", marginLeft:"10px"}}>Тугри киритилди</b>):
+                                             (<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>Текширинг</b>)}
+                </div>
             </div>            
           </div>
 
@@ -277,14 +282,14 @@ class Main extends Component {
                 <option>99</option>
                 <option>33</option>
               </select>
-              <input onChange={(e)=>this.setState({raqam:e.target.value})} type="number" placeholder="Ракамингизни киритинг" value={this.state.raqam}/>
+              <input onChange={(e)=>this.setState({raqam:e.target.value})} type="number" placeholder="Ракамингизни киритинг" value={this.state.raqam}/> <br/><br/>
               {/* {if(this.state.raqam.length!===""){
                 {(<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>"Киритилмокда"</b>)}
                 if(this.state.raqam.length===7){(<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>"Тугри"</b>)}
               else{(<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}></b>)}}; */}
 
               { this.state.raqam.length===7? (<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}></b>):
-                                             (<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>Tekshiring</b>)}              
+                                             (<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>Текширинг</b>)}              
               
               </div>
               

@@ -21,7 +21,8 @@ main{
 }
 .main{
     display: grid;
-    grid-template-columns: 4fr 1fr;    
+    grid-template-columns: 4fr 1fr;  
+    gap:7.5rem;  
 }
 .main-left{
     text-align: center;
@@ -78,14 +79,10 @@ main{
 }
 
 .box-right input{
-    width: 62.5rem;
+    width: 12rem;
     height: 1.875rem;   
-    padding: 4px; 
-    /* margin-bottom: 10px; */
-    border: none;
-    /* border-bottom: 1px solid black; */
-    /* border-left: 1px solid black; */
-    /* border-bottom-left-radius: 5px; */
+    padding: 4px;     
+    border: none;   
     box-shadow: 0px 0px 1px;
     outline: none;
 }
@@ -161,6 +158,8 @@ main{
 }
 .jadval,.input{
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .jadval p{
     height: 5rem;
@@ -216,36 +215,51 @@ main{
 }
 .raqam input{
     margin-bottom: 0;
-    width: 27.5rem;
+    width: 25.7rem;
     font-size: 1rem;
     list-style: none;
 }
-
-
-
-
-
 @media screen and (max-width: 425px){
     body{
-        max-width: 400px;
+        /* max-width: 400px; */
     }
-
     nav{
         margin: 30px;
     }
     main{
-        margin-left: 30px;
-    }
-    
+        margin: 30px;
+    }    
     .adres input,.mail input,.number input,.date input{
         width: 31.25rem;
         height: 1.875rem;   
     }
     .box-right textarea{
-        width: 59rem;        
+        width: 50rem;        
     }
     .box-right>select{
-        width: 59rem;        
+        width: 50rem;        
+    }
+    .box-right input{
+        width: 12rem;        
+    }   
+   .raqam input{
+        width: 25.7rem;
+    }
+    .raqam {
+        width: 50rem;
+    }
+    .jadval {
+        height: 6rem;
+        width: 47rem;        
+    }
+    .jadval p{
+        height: 8rem;
+        
+    }
+    .input input{
+        height: 5rem;
+        width: 9.4rem;
+        
     }
 }
 
