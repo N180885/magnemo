@@ -291,6 +291,10 @@ select {
     height: 5rem;
     width: 9.4rem;
   }
+  .input textarea {
+    height: 5rem;
+    width: 9.4rem;
+  }
   .lang input {   
     width: 9rem;
   }
