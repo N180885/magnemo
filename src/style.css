@@ -52,6 +52,9 @@ select {
 }
 
 .foto {
+  place-content: "3.5x4.5 cm";
+  /* place-content: "рангли фотосурат"; */
+
   border: 1px solid black;
   height: 13.75rem;
   width: 11.25rem;
@@ -59,7 +62,7 @@ select {
   flex-direction: column;
   justify-content: space-around;
   font-size: 0.75rem;
-  background: rgb(238, 238, 238);
+  /* background: rgb(238, 238, 238); */
   text-align: center;
 }
 .rem,
@@ -251,6 +254,40 @@ select {
   font-size: 1rem;
   list-style: none;
 }
+label {
+  cursor: pointer;
+  font-size: 40px;
+  background-color: #ccc;
+  border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 425px) {
   nav {
     margin: 30px;
