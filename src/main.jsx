@@ -4,15 +4,22 @@ class Main extends Component {
   state = {
     til: "",
     til1: "",
-    mode: "",
+    mode: [],
+    fam:[],
+    fam1:"",
     raqam:"",
     inn:""
   };
 
   click=()=>{
-    this.setState({mode:this.state.mode+1});
-    
-
+    let copy=[...this.state.mode]
+    copy.unshift(this.state.til1)
+    this.setState({mode:copy});
+  }
+  click1=()=>{
+    let copy=[...this.state.fam]
+    copy.unshift(this.state.fam1)
+    this.setState({fam:copy});
   }
 
 
@@ -52,6 +59,7 @@ class Main extends Component {
                   (охирги 3 той давомида олинган расмий кийим(<b>галстукда</b>
                   )да)
                 </p>
+                
               </div>
             </div>
           </div>
@@ -201,10 +209,12 @@ class Main extends Component {
                       </select> 
                   </div>
                
-                  {this.state.mode===""? null: (
+                  {this.state.mode.map(()=>{
+                    return(
                     <>
                     <div className="lang">
-                    <input onChange={(e)=>this.setState({til1:e.target.value})} type="text" placeholder="Тилни киритинг" value={this.state.til1}/>
+                      
+                    <input onChange={(e)=>this.setState({til1:e.target.value})} type="text" placeholder="Тилни киритинг" />
                     <select>
                           <option value="" selected >1</option>
                           <option>2</option>
@@ -215,7 +225,7 @@ class Main extends Component {
                       </div>
                   
                     </>
-                  )}
+                  )})}
                   <button onClick={this.click}>+</button>
 
               </div>
@@ -251,13 +261,31 @@ class Main extends Component {
               <p>Иш жойининг тўлиқ ва лавозим номи</p>
               <p>Турар жойи (пропискаси бўйича вил.туман, МФЙ, кўча номи, уй рақами)</p>
           </div>
+          <div className="family1">
           <div className="input">
               <input/>
-              <input/>
-              <input/>
-              <input/>
-              <input/>
+              <textarea/>
+              <textarea/>
+              <textarea/>
+              <textarea/>
+              <button onClick={this.click1}>+</button>
           </div>
+              {this.state.fam.map(()=>{
+                    return(
+                    <>
+                    <div className="input">
+                    <input/>
+                    <textarea/>
+                    <textarea/>
+                    <textarea/>
+                    <textarea/>
+                      </div>                  
+                    </>
+                  )})}
+            </div>
+
+
+
           <div className="adres">
               <p>13. Расмий ёзишмалар учун яшаш манзилингиз</p>
               <input/>
@@ -281,6 +309,7 @@ class Main extends Component {
                 <option>98</option>
                 <option>99</option>
                 <option>33</option>
+                <option>88</option>
               </select>
               <input onChange={(e)=>this.setState({raqam:e.target.value})} type="number" placeholder="Ракамингизни киритинг" value={this.state.raqam}/> <br/><br/>
               {/* {if(this.state.raqam.length!===""){

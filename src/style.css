@@ -67,6 +67,16 @@ select {
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
 }
+.family1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.family1 button{
+  height: 1.5rem;
+  width: 1.5rem;
+}
 .boxes {
   display: flex;
   flex-direction: column;
@@ -176,10 +186,19 @@ select {
   height: 5rem;
   width: 12.5rem;
   border: 1px solid black;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
-  margin-bottom: 1.875rem;
+  /* margin-bottom: 1.875rem; */
 }
+.input textarea {
+  height: 5rem;
+  width: 12.5rem;
+  border: 1px solid black;
+  font-weight: 500;
+  text-align: center;
+  /* margin-bottom: 1.875rem; */
+}
+
 .adres,
 .mail,
 .number,
