@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/magnemo/static/css/main.1a66153f.chunk.css",
+    "main.css": "/magnemo/static/css/main.1f9220fe.chunk.css",
     "main.js": "/magnemo/static/js/main.91492b47.chunk.js",
     "main.js.map": "/magnemo/static/js/main.91492b47.chunk.js.map",
     "runtime-main.js": "/magnemo/static/js/runtime-main.69e9253d.js",
@@ -10,14 +10,14 @@
     "static/js/3.17300883.chunk.js": "/magnemo/static/js/3.17300883.chunk.js",
     "static/js/3.17300883.chunk.js.map": "/magnemo/static/js/3.17300883.chunk.js.map",
     "index.html": "/magnemo/index.html",
-    "static/css/main.1a66153f.chunk.css.map": "/magnemo/static/css/main.1a66153f.chunk.css.map",
+    "static/css/main.1f9220fe.chunk.css.map": "/magnemo/static/css/main.1f9220fe.chunk.css.map",
     "static/js/2.efccade6.chunk.js.LICENSE.txt": "/magnemo/static/js/2.efccade6.chunk.js.LICENSE.txt",
     "static/media/rasm.c90fa929.png": "/magnemo/static/media/rasm.c90fa929.png"
   },
   "entrypoints": [
     "static/js/runtime-main.69e9253d.js",
     "static/js/2.efccade6.chunk.js",
-    "static/css/main.1a66153f.chunk.css",
+    "static/css/main.1f9220fe.chunk.css",
     "static/js/main.91492b47.chunk.js"
   ]
 }
