@@ -337,9 +337,11 @@ label {
   }
   .foto{
     position: relative;
+    height: 12rem;
+    width: 10rem;
   }
   .foto img{
-    height: 13.75rem;
-    width: 11.25rem;
+    height: 12rem;
+    width: 10rem;
   }
 }
