@@ -8,8 +8,8 @@ class Main extends Component {
     fam: [],
     fam1: "",
     raqam: "",
-    mail:"",
-    mails:"",
+    mail: "",
+    mails: "",
     inn: "",
     file: null,
   };
@@ -24,12 +24,12 @@ class Main extends Component {
     copy.unshift(this.state.fam1);
     this.setState({ fam: copy });
   };
- 
-  dow=(event)=>{
+
+  dow = (event) => {
     this.setState({
       file: URL.createObjectURL(event.target.files[0]),
     });
-  }
+  };
 
   render() {
     return (
@@ -61,18 +61,27 @@ class Main extends Component {
               </ul>
             </div>
             <div className="main-right">
-              <div className="foto" >
-                <p>3.5x4.5 cm</p>
-                <p><b>рангли фотосурат</b></p>
+              <div className="foto">
+                <p>3.5x4.5 cм</p>
+                <p>
+                  <b>рангли фотосурат</b>
+                </p>
                 <p>
                   (охирги 3 той давомида олинган расмий кийим(<b>галстукда</b>
                   )да)
                 </p>
                 <img src={this.state.file} alt="" />
               </div>
-                <input type="file" onChange={this.dow} id="file" style={{display:"none"}} />
-                
-                <button><label for="file">Расмни юклаш</label></button>
+              <input
+                type="file"
+                onChange={this.dow}
+                id="file"
+                style={{ display: "none" }}
+              />
+
+              <button>
+                <label for="file">Расмни юклаш</label>
+              </button>
             </div>
           </div>
           <div className="rem">
@@ -100,14 +109,14 @@ class Main extends Component {
               <div className="box-right">
                 <select>
                   <option value="" selected>
-                    Узбек
+                  Ўзбек
                   </option>
-                  <option value="Qirg'iz">Киргиз</option>
-                  <option value="Qozoq">Козок</option>
+                  <option value="Qirg'iz">Қирғиз</option>
+                  <option value="Qozoq">Қозоқ</option>
                   <option value="Tojik">Тожик</option>
                   <option value="Rus">Рус</option>
                   <option value="Koreys">Корейс</option>
-                  <option value="Uyg'ur">Уйгур</option>
+                  <option value="Uyg'ur">Уйғур</option>
                   <option value="Turkman">Туркман</option>
                   <option value="Hindi">Хинд</option>
                   <option value="Tatar">Татар</option>
@@ -119,7 +128,7 @@ class Main extends Component {
                   <option value="Moldovan">Молдован</option>
                   <option value="Armyan">Армян</option>
                   <option value="Hitoy">Хитой</option>
-                  <option value="Qoraqalpoq">Коракалпок</option>
+                  <option value="Qoraqalpoq">Қорақалпоқ</option>
                   <option value="Ukrain">Украин</option>
                   <option value="Ozarbayjan">Озарбайжон</option>
                   <option value="Belarus">Беларус</option>
@@ -209,14 +218,14 @@ class Main extends Component {
                     <option>Корейс тили</option>
                     <option>Япон тили</option>
                     <option>Тожик тили</option>
-                    <option>Киргиз тили</option>
-                    <option>Козок тили</option>
+                    <option>Қирғиз тили</option>
+                    <option>Қозоқ тили</option>
                     <option>Туркман тили</option>
                     <option>Француз тили</option>
                     <option>Хинд тили</option>
                     <option>Испан тили</option>
                   </select>
-                  
+
                   <select>
                     <option value="" selected>
                       1
@@ -232,24 +241,24 @@ class Main extends Component {
                   return (
                     <>
                       <div className="lang">
-                      <select className="tilni-tanla">
-                    <option value="Tilni tanlang" selected disabled>
-                      Тилни танланг
-                    </option>
-                    <option>Немис тили</option>
+                        <select className="tilni-tanla">
+                          <option value="Tilni tanlang" selected disabled>
+                            Тилни танланг
+                          </option>
+                          <option>Немис тили</option>
                     <option>Турк тили</option>
                     <option>Араб тили</option>
                     <option>Хитой тили</option>
                     <option>Корейс тили</option>
                     <option>Япон тили</option>
                     <option>Тожик тили</option>
-                    <option>Киргиз тили</option>
-                    <option>Козок тили</option>
+                    <option>Қирғиз тили</option>
+                    <option>Қозоқ тили</option>
                     <option>Туркман тили</option>
                     <option>Француз тили</option>
                     <option>Хинд тили</option>
                     <option>Испан тили</option>
-                  </select>
+                        </select>
                         {/* <input
                           onChange={(e) =>
                             this.setState({ til1: e.target.value })
@@ -290,7 +299,7 @@ class Main extends Component {
                   onChange={(e) => this.setState({ inn: e.target.value })}
                   type="number"
                   className="inn"
-                  placeholder="ИНПС ракамингизни киритинг"
+                  placeholder="ИНПС рақамингизни киритинг"
                 />
                 {this.state.inn.length === 14 ? (
                   <b
@@ -301,7 +310,7 @@ class Main extends Component {
                       marginLeft: "10px",
                     }}
                   >
-                    Тугри киритилди
+                    Тўғри киритилди
                   </b>
                 ) : (
                   <b
@@ -318,7 +327,6 @@ class Main extends Component {
               </div>
             </div>
           </div>
-
           <div className="family">
             <p>
               <b>
@@ -344,7 +352,24 @@ class Main extends Component {
           </div>
           <div className="family1">
             <div className="input">
-              <input />
+            <select className="check-family">
+                          <option value="Tilni tanlang" selected disabled>
+                          Оила аъзоингизни танланг
+                          </option>
+                          <option>Бобом</option>
+                          <option>Бувим</option>
+                          <option>Отам</option>
+                          <option>Онам</option>
+                          <option>Акам</option>
+                          <option>Укам</option>
+                          <option>Опам</option>
+                          <option>Синглим</option>
+                          <option>Турмуш ўртоғим</option>
+                          <option>Ўғлим</option>
+                          <option>Қизим</option>
+                          <option>Қайнотам</option>
+                          <option>Қайнонам</option>
+                        </select>              
               <textarea />
               <textarea />
               <textarea />
@@ -355,7 +380,24 @@ class Main extends Component {
               return (
                 <>
                   <div className="input">
-                    <input />
+                  <select className="check-family">
+                          <option value="Tilni tanlang" selected disabled>
+                            Оила аъзоингизни танланг
+                          </option>
+                          <option>Бобом</option>
+                          <option>Бувим</option>
+                          <option>Отам</option>
+                          <option>Онам</option>
+                          <option>Акам</option>
+                          <option>Укам</option>
+                          <option>Опам</option>
+                          <option>Синглим</option>
+                          <option>Турмуш ўртоғим</option>
+                          <option>Ўғлим</option>
+                          <option>Қизим</option>
+                          <option>Қайнотам</option>
+                          <option>Қайнонам</option>
+                        </select>              
                     <textarea />
                     <textarea />
                     <textarea />
@@ -371,13 +413,12 @@ class Main extends Component {
           </div>
           <div className="mail">
             <p>14. Расмий ёзишмалар учун электрон почта манзилингиз:</p>
-            <input onChange={(e) => this.setState({ mail: e.target.value })}
-                type="text"
-                placeholder="Email манзилингизни киритинг"
-                value={this.state.mail}/>
-                
-           
-
+            <input
+              onChange={(e) => this.setState({ mail: e.target.value })}
+              type="text"
+              placeholder="Email манзилингизни киритинг"
+              value={this.state.mail}
+            />
           </div>
           <div className="number">
             <p>15. Шахсий уяли телефон рақамингиз</p>
@@ -397,9 +438,9 @@ class Main extends Component {
                 <option>33</option>
                 <option>88</option>
               </select>
-              <input type="number"
+              <input
+                type="number"
                 onChange={(e) => this.setState({ raqam: e.target.value })}
-               
                 placeholder="Ракамингизни киритинг"
                 value={this.state.raqam}
               />
@@ -417,7 +458,9 @@ class Main extends Component {
                     border: "none",
                     marginLeft: "10px",
                   }}
-                >Тугри</b>
+                >
+                  Тугри
+                </b>
               ) : (
                 <b
                   style={{

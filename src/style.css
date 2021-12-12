@@ -41,9 +41,6 @@ main {
   height: 1.875rem;
   width: 31.25rem;
   border: none;
-  /* border-bottom: 1px solid black; */
-  /* border-left: 1px solid black; */
-  /* border-bottom-left-radius: 5px; */
   box-shadow: 1px 1px 1px;
   outline: none;
 }
@@ -53,7 +50,6 @@ select {
 .main-right{
   position: relative;
 }
-
 .foto {
   border: 1px solid black;
   height: 13.75rem;
@@ -62,8 +58,7 @@ select {
   flex-direction: column;
   justify-content: space-around;
   font-size: 0.75rem;
-  text-align: center;
-  /* position:absolute; */
+  text-align: center; 
   z-index: 0;
 }
 .foto img{
@@ -102,9 +97,8 @@ select {
   font-weight: 600;
   font-size: 0.93rem;
 }
-
 .box-right input {
-  width: 12rem;
+  width: 13rem;
   height: 1.875rem;
   padding: 4px;
   border: none;
@@ -117,37 +111,17 @@ select {
   padding: 4px;
   margin-bottom: 10px;
   border: none;
-  /* border-bottom: 1px solid black; */
-  /* border-left: 1px solid black; */
-  /* border-bottom-left-radius: 5px; */
   box-shadow: 0px 0px 1px;
   outline: none;
 }
-
 .box-right textarea {
   width: 62.5rem;
   padding: 4px;
   margin-bottom: 10px;
-  border: none;
-  /* border-bottom: 1px solid black; */
-  /* border-left: 1px solid black; */
-  /* border-bottom-left-radius: 5px; */
+  border: none; 
   box-shadow: 0px 0px 1px;
   outline: none;
 }
-/* .til{
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-}
-.til input{
-    width: 150px;
-    font-size: 16px;
-}
-.til select{
-    height: 30px;
-    width: 35px;    
-} */
 .lang {
   display: flex;
   justify-content: space-between;
@@ -165,13 +139,11 @@ select {
   border: none;
   border-bottom: 1px dashed #ccc;
 }
-
 .lang .tilni-tanla option {
   height: 1.875rem;
   width: 11rem;
   font-size: 1rem;
 }
-
 .box-right button {
   height: 1.875rem;
   width: 2.18rem;
@@ -193,23 +165,22 @@ select {
   font-weight: 700;
   text-align: center;
 }
-.input input {
+.input select {
   height: 5rem;
   width: 12.5rem;
   border: 1px solid black;
   font-weight: 500;
-  text-align: center;
-  /* margin-bottom: 1.875rem; */
+  text-align: center;  
 }
 .input textarea {
   height: 5rem;
   width: 12.5rem;
   border: 1px solid black;
   font-weight: 500;
-  text-align: center;
-  /* margin-bottom: 1.875rem; */
+  cross-axis:center;
+  text-align:center;
+  
 }
-
 .adres,
 .mail,
 .number,
@@ -236,9 +207,6 @@ select {
   padding: 4px;
   margin-bottom: 10px;
   border: none;
-  /* border-bottom: 1px solid black; */
-  /* border-left: 1px solid black; */
-  /* border-bottom-left-radius: 5px; */
   box-shadow: 0px 0px 1px;
   outline: none;
 }
@@ -275,12 +243,6 @@ select {
 .main-right label {
   cursor: pointer;
   font-size: 1rem;
-  /* background-color: #ccc; */
-  
-  
-  
-  
-
 }
 
 
@@ -345,7 +307,7 @@ select {
   .jadval p {
     height: 8rem;
   }
-  .input input {
+  .input select {
     height: 5rem;
     width: 9.4rem;
   }
