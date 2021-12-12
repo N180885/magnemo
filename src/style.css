@@ -50,6 +50,9 @@ main {
 select {
   background-color: rgb(255, 253, 253);
 }
+.main-right{
+  position: relative;
+}
 
 .foto {
   border: 1px solid black;
@@ -59,8 +62,16 @@ select {
   flex-direction: column;
   justify-content: space-around;
   font-size: 0.75rem;
-  /* background: rgb(238, 238, 238); */
   text-align: center;
+  /* position:absolute; */
+  z-index: 0;
+}
+.foto img{
+  width: 11.15rem;
+  height: 13.70rem;
+  color: black;
+  position:absolute;
+  z-index: 1;
 }
 .rem,
 .family {
@@ -251,11 +262,24 @@ select {
   font-size: 1rem;
   list-style: none;
 }
-label {
+.main-right button {
   cursor: pointer;
-  font-size: 40px;
-  background-color: #ccc;
-  border-radius: 20px;
+  border-radius: 10px;
+  height: 2rem;
+  width: 8rem;
+  margin-top: 0.8rem;
+  margin-left: 1.5rem;
+  border: 1px solid #ccd;
+
+}
+.main-right label {
+  cursor: pointer;
+  font-size: 1rem;
+  /* background-color: #ccc; */
+  
+  
+  
+  
 
 }
 
@@ -287,10 +311,10 @@ label {
 
 @media screen and (max-width: 425px) {
   nav {
-    margin: 30px;
+    margin: 2rem;
   }
   main {
-    margin: 30px;
+    margin: 2rem;
   }
   .adres input,
   .mail input,
@@ -337,11 +361,6 @@ label {
   }
   .foto{
     position: relative;
-    height: 12rem;
-    width: 10rem;
   }
-  .foto img{
-    height: 12rem;
-    width: 10rem;
-  }
+
 }

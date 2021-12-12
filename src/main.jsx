@@ -8,6 +8,7 @@ class Main extends Component {
     fam: [],
     fam1: "",
     raqam: "",
+    mail:"",
     inn: "",
     file: null,
   };
@@ -28,6 +29,9 @@ class Main extends Component {
       file: URL.createObjectURL(event.target.files[0]),
     });
   }
+
+  
+
 
   render() {
     return (
@@ -59,18 +63,18 @@ class Main extends Component {
               </ul>
             </div>
             <div className="main-right">
-              <div className="foto">
-                {/* <p>3.5x4.5 cm</p>
+              <div className="foto" >
+                <p>3.5x4.5 cm</p>
                 <p><b>рангли фотосурат</b></p>
                 <p>
                   (охирги 3 той давомида олинган расмий кийим(<b>галстукда</b>
                   )да)
-                </p> */}
-                <img src={this.state.file} />
+                </p>
+                <img src={this.state.file} alt="" />
               </div>
                 <input type="file" onChange={this.dow} id="file" style={{display:"none"}} />
-                <label for="file">+</label>
-
+                
+                <button><label for="file">Расмни юклаш</label></button>
             </div>
           </div>
           <div className="rem">
@@ -214,7 +218,7 @@ class Main extends Component {
                     <option>Хинд тили</option>
                     <option>Испан тили</option>
                   </select>
-                  {/* <input onChange={(e)=>this.setState({til:e.target.value})} type="text" placeholder="Tilni kiriting" value={this.state.til}/> */}
+                  
                   <select>
                     <option value="" selected>
                       1
@@ -230,13 +234,31 @@ class Main extends Component {
                   return (
                     <>
                       <div className="lang">
-                        <input
+                      <select className="tilni-tanla">
+                    <option value="Tilni tanlang" selected disabled>
+                      Тилни танланг
+                    </option>
+                    <option>Немис тили</option>
+                    <option>Турк тили</option>
+                    <option>Араб тили</option>
+                    <option>Хитой тили</option>
+                    <option>Корейс тили</option>
+                    <option>Япон тили</option>
+                    <option>Тожик тили</option>
+                    <option>Киргиз тили</option>
+                    <option>Козок тили</option>
+                    <option>Туркман тили</option>
+                    <option>Француз тили</option>
+                    <option>Хинд тили</option>
+                    <option>Испан тили</option>
+                  </select>
+                        {/* <input
                           onChange={(e) =>
                             this.setState({ til1: e.target.value })
                           }
                           type="text"
                           placeholder="Тилни киритинг"
-                        />
+                        /> */}
                         <select>
                           <option value="" selected>
                             1
@@ -263,14 +285,14 @@ class Main extends Component {
             </div>
             <div className="box">
               <div className="box-left">
-                <p>ИНН рақамингиз</p>
+                <p>ИНПС рақамингиз</p>
               </div>
               <div className="box-right">
                 <input
                   onChange={(e) => this.setState({ inn: e.target.value })}
                   type="number"
                   className="inn"
-                  placeholder="ИНН ракамингизни киритинг"
+                  placeholder="ИНПС ракамингизни киритинг"
                 />
                 {this.state.inn.length === 14 ? (
                   <b
@@ -351,7 +373,12 @@ class Main extends Component {
           </div>
           <div className="mail">
             <p>14. Расмий ёзишмалар учун электрон почта манзилингиз:</p>
-            <input />
+            <input onChange={(e) => this.setState({ mail: e.target.value })}
+                type="number"
+                placeholder="Ракамингизни киритинг"
+                value={this.state.mail}/>
+           
+
           </div>
           <div className="number">
             <p>15. Шахсий уяли телефон рақамингиз</p>
@@ -371,12 +398,12 @@ class Main extends Component {
                 <option>33</option>
                 <option>88</option>
               </select>
-              <input
+              <input type="number"
                 onChange={(e) => this.setState({ raqam: e.target.value })}
-                type="number"
+               
                 placeholder="Ракамингизни киритинг"
                 value={this.state.raqam}
-              />{" "}
+              />
               <br />
               <br />
               {/* {if(this.state.raqam.length!===""){
@@ -386,12 +413,12 @@ class Main extends Component {
               {this.state.raqam.length === 7 ? (
                 <b
                   style={{
-                    color: "red",
+                    color: "green",
                     width: "200px",
                     border: "none",
                     marginLeft: "10px",
                   }}
-                ></b>
+                >Тугри</b>
               ) : (
                 <b
                   style={{
