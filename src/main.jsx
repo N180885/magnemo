@@ -9,6 +9,7 @@ class Main extends Component {
     fam1: "",
     raqam: "",
     mail:"",
+    mails:"",
     inn: "",
     file: null,
   };
@@ -29,9 +30,6 @@ class Main extends Component {
       file: URL.createObjectURL(event.target.files[0]),
     });
   }
-
-  
-
 
   render() {
     return (
@@ -374,9 +372,10 @@ class Main extends Component {
           <div className="mail">
             <p>14. Расмий ёзишмалар учун электрон почта манзилингиз:</p>
             <input onChange={(e) => this.setState({ mail: e.target.value })}
-                type="number"
-                placeholder="Ракамингизни киритинг"
+                type="text"
+                placeholder="Email манзилингизни киритинг"
                 value={this.state.mail}/>
+                
            
 
           </div>
