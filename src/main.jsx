@@ -446,10 +446,7 @@ class Main extends Component {
               />
               <br />
               <br />
-              {/* {if(this.state.raqam.length!===""){
-                {(<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>"Киритилмокда"</b>)}
-                if(this.state.raqam.length===7){(<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}>"Тугри"</b>)}
-              else{(<b style={{color:"red", width:"200px", border: "none", marginLeft:"10px"}}></b>)}}; */}
+             
               {this.state.raqam.length === 7 ? (
                 <b
                   style={{
