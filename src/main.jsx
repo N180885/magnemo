@@ -12,6 +12,7 @@ class Main extends Component {
     mails: "",
     inn: "",
     file: null,
+    array:[]
   };
 
   click = () => {
@@ -67,7 +68,7 @@ class Main extends Component {
                   <b>рангли фотосурат</b>
                 </p>
                 <p>
-                  (охирги 3 той давомида олинган расмий кийим(<b>галстукда</b>
+                  (охирги 3 ой давомида олинган расмий кийим(<b>галстукда</b>
                   )да)
                 </p>
                 <img src={this.state.file} alt="" />
@@ -413,12 +414,38 @@ class Main extends Component {
           </div>
           <div className="mail">
             <p>14. Расмий ёзишмалар учун электрон почта манзилингиз:</p>
+            <div className="mails">
             <input
               onChange={(e) => this.setState({ mail: e.target.value })}
               type="text"
               placeholder="Email манзилингизни киритинг"
               value={this.state.mail}
-            />
+            />            
+              {this.state.mail.split("").includes("@") && this.state.mail.split("").includes(".")? (
+                <b
+                  style={{
+                    color: "green",
+                    width: "200px",
+                    border: "none",
+                    marginLeft: "10px",
+                  }}
+                >
+                  Тўғри
+                </b>
+              ) : (
+                <b
+                  style={{
+                    color: "red",
+                    width: "200px",
+                    border: "none",
+                    marginLeft: "10px",
+                  }}
+                >
+                  Текширинг
+                </b>
+              )}
+              </div>
+            
           </div>
           <div className="number">
             <p>15. Шахсий уяли телефон рақамингиз</p>
@@ -441,7 +468,7 @@ class Main extends Component {
               <input
                 type="number"
                 onChange={(e) => this.setState({ raqam: e.target.value })}
-                placeholder="Ракамингизни киритинг"
+                placeholder="Рақамингизни киритинг"
                 value={this.state.raqam}
               />
               <br />
@@ -456,7 +483,7 @@ class Main extends Component {
                     marginLeft: "10px",
                   }}
                 >
-                  Тугри
+                  Тўғри
                 </b>
               ) : (
                 <b
@@ -467,7 +494,7 @@ class Main extends Component {
                     marginLeft: "10px",
                   }}
                 >
-                  Текширинг
+                Текширинг
                 </b>
               )}
             </div>
